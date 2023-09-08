@@ -1,0 +1,218 @@
+.gallery {
+    background-color: #fff;
+}
+
+.gallery__title {
+    text-align: center;
+    margin-top: 0;
+}
+
+.gallery__navigation {
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.gallery__menu {
+    overflow: auto;
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    gap: 20px;
+}
+
+.gallery__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 280px;
+    height: 50px;
+    color: #2c2c2c;
+    font-size: 18px;
+    font-style: normal;
+    line-height: normal;
+    background: linear-gradient(to bottom, #efe2f3ab, #dcd0e28d), url('./../images/bg-cyrcle.png') no-repeat -280px -05px;
+    background-size: contain;
+    width: 100%;
+    opacity: 1;
+    transition: all .5s;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    border: 2px solid #efe2f3ab;
+}
+
+.gallery__link_active {
+    background: linear-gradient(to bottom, #efe2f3ab, #dcd0e28d), url('./../images/bg-cyrcle.png') no-repeat 0;
+    background-size: contain;
+    border: 2px solid #efe2f3ab;
+    transition: all 0.5s;
+    box-shadow: none;
+
+}
+
+.gallery__link:hover {
+    transition: all 0.5s;
+    border: 2px solid #efe2f3ab;
+    cursor: pointer;
+    box-shadow: rgba(103, 103, 103, 0.25) 0px 0.0625em 0.0625em, rgba(113, 113, 113, 0.25) 0px 0.125em 0.5em, rgba(119, 119, 119, 0.1) 0px 0px 0px 1px inset;
+}
+
+.gallery__item {
+    display: none;
+    grid-template-areas:
+        'image1 image1 image2 image2 image3 image3'
+        'image4 image4 image5 image5 image3 image3'
+        'image6 image6 image6 image7 image7 image7'
+        'image6 image6 image6 image7 image7 image7'
+        'image8 image8 image9 image9 image10 image10'
+        'image8 image8 image11 image11 image12 image12';
+    grid-template-rows: 360px;
+    grid-auto-rows: 360px;
+    gap: 10px;
+}
+
+.gallery__item_active {
+    display: grid;
+}
+
+.gallery__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s;
+    border-radius: 10px;
+}
+
+.gallery__image:hover {
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.368) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    transition: all 0.5s;
+}
+
+.gallery__image_1 {
+    grid-area: image1;
+}
+
+.gallery__image_2 {
+    grid-area: image2;
+
+}
+
+.gallery__image_3 {
+    grid-area: image3;
+}
+
+.gallery__image_4 {
+    grid-area: image4;
+
+}
+
+.gallery__image_5 {
+    grid-area: image5;
+}
+
+.gallery__image_6 {
+    grid-area: image6;
+}
+
+.gallery__image_7 {
+    grid-area: image7;
+}
+
+.gallery__image_8 {
+    grid-area: image8;
+}
+
+.gallery__image_9 {
+    grid-area: image9;
+}
+
+.gallery__image_10 {
+    grid-area: image10;
+
+}
+
+.gallery__image_11 {
+    grid-area: image11;
+}
+
+.gallery__image_12 {
+    grid-area: image12;
+}
+
+@media (max-width: 1124px) {
+    .gallery__image {
+        border-radius: 5px;
+    }
+
+    .gallery__link {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .gallery__menu {
+        padding: 10px;
+    }
+
+    .gallery__item {
+        grid-template-rows: 180px;
+        grid-auto-rows: 180px;
+        gap: 5px;
+    }
+}
+
+
+@media (max-width:925px) {
+    .gallery__link {
+        font-size: 14px;
+        padding: 10px;
+        height: 40px;
+    }
+
+    .gallery__menu {
+        gap: 10px;
+    }
+
+    .gallery__item {
+        grid-template-areas:
+            'image1 image2 image3'
+            'image4 image5 image6'
+            'image7 image8 image9'
+            'image10 image11 image12';
+    }
+    .container_active  .gallery__item {
+        grid-template-areas:
+            'image1 image2'
+            'image3 image4'
+            'image5 image6'
+            'image7 image8'
+            'image9 image10'
+            'image11 image12';
+    }
+
+}
+
+@media(max-width: 568px) {
+    .gallery{overflow: scroll;
+
+    }
+    .gallery__menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery__item {
+        grid-template-areas:
+            'image1 image2'
+            'image3 image4'
+            'image5 image6'
+            'image7 image8'
+            'image9 image10'
+            'image11 image12';
+    }
+}

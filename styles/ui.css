@@ -1,0 +1,216 @@
+.container {
+    background: #fff;
+    padding: 0;
+    width: 100%;
+    margin-left: auto;
+    transition: width 0.3s;
+}
+
+.container_active {
+    width: 80%;
+    transition: width 0.3s;
+}
+
+.title {
+    color: #3e3e3e;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 40px;
+    position: relative;
+
+}
+
+.title_size_large {
+    font-size: 54px;
+}
+
+.subtitle {
+    color: #3e3e3e;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: normal;
+}
+
+.section {
+    padding: 50px;
+    min-height: 100vh;
+
+}
+
+.wechat {
+    max-width: 80px;
+    max-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.wechat-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wechat_size_large {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #686868;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+
+.link:hover {
+    color: #AA89B8;
+    transition: all 0.5s;
+}
+
+.link_active {
+    font-weight: bold;
+    color: #AA89B8;
+}
+
+.button {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-self: center;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px;
+    color: #2c2c2c;
+    cursor: pointer;
+    width: 288px;
+    background: radial-gradient(farthest-side ellipse at top left, #c0b1d4, rgb(234 225 239));
+    border: 3px solid #c0b1d4;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.3), -5px -10px 20px rgba(255, 255, 255, 0.5);
+    border: 3px solid #eee2f3;
+    transition: all 0.5s;
+}
+
+.button:hover {
+    box-shadow: none;
+    color: #1c1c1c;
+    transition: all 0.5s;
+}
+
+.button_basic {
+    display: flex;
+    text-transform: capitalize;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    width: 120px;
+    height: 40px;
+    transition: all 0.5s;
+    align-self: flex-end;
+    background: linear-gradient(to bottom, #efe2f3ab, #dcd0e28d), url('./../images/bg-cyrcle.png') no-repeat 0;
+    background-size: 50%;
+    opacity: 1;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    border: 2px solid #efe2f3ab;
+    transition: all 0.5s;
+    color: #2c2c2c;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.button_basic:hover {
+    cursor: pointer;
+    background: linear-gradient(to bottom, #efe2f3ab, #dcd0e28d), url('./../images/bg-cyrcle.png') no-repeat 0;
+    background-size: 100%;
+    border: 2px solid #efe2f3ab;
+    transition: all 0.5s;
+    box-shadow: none;
+}
+
+.description {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.description::before {
+    content: '';
+    background-size: contain;
+    position: absolute;
+    left: 0px;
+    top: -0px;
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+.phone {
+    display: flex;
+    align-self: center;
+    text-decoration: none;
+    font-weight: 400;
+    color: #3e3e3e;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+@media (max-width: 1024px) {
+    .container_active {
+        width: 75%;
+    }
+
+    .section {
+        padding: 50px 20px;
+    }
+
+    .title {
+        margin: 0 0 20px;
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 50px 20px;
+    }
+
+    .title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 568px) {
+    .section {
+        padding: 100px 10px 50px 10px;
+        max-height: 100vh;
+    }
+    .title {
+        font-size: 20px;
+    }
+
+    .content {
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 425px) {
+    .title {
+        font-size: 18px;
+    }
+}

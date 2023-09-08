@@ -1,0 +1,107 @@
+.new-projects {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.826), #ffffff), url('./../images/pregnancy/pregnancy-5.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 20px;
+}
+
+.new-projects__container {
+    padding: 10px;
+    transition: all 1s;
+
+
+}
+
+.new-projects__title {
+    text-align: center;
+}
+
+.new-projects__upcoming-event {
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 972px;
+}
+
+.new-project__header {
+    text-align: center;
+}
+
+.new-project__date {
+    color: #8056aa;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.new-project__title {
+    border-bottom: 2px solid #fff;
+    color: #8056aa;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.new-project__content {
+    background: #ffffffbd;
+    padding: 50px;
+    border-radius: 20px;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.new-project__image {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #dcd0e2;
+    padding: 3px;
+}
+
+@media (max-width: 1124px) {
+    .new-project__image {
+        width: 240px;
+        height: 240px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .new-project__content {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .new-projects__container{
+        padding: 0;
+    }
+
+    .new-projects__title {
+        margin-bottom: 0;
+    }
+
+    .new-project__date{
+        font-size: 18px;
+    }
+    .new-project__image {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 568px) {
+    .new-projects{
+        overflow: scroll;
+    }
+    .new-project__content {
+        padding: 20px;
+    }}

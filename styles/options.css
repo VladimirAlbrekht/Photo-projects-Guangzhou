@@ -1,0 +1,167 @@
+.options {
+    display: block;
+    width: 100%;
+    transition: all 1s;
+}
+
+.options__title {
+    text-align: center;
+}
+
+.options__container {
+    display: flex;
+    width: 100%;
+    padding: 0 20px;
+    gap: 10px;
+}
+
+.slide_one {
+    background: url('./../images/pregnancy/pregnancy-9.jpg');
+
+}
+
+.slide_two {
+    background: url('./../images/newborn/newborn-1.jpg');
+
+}
+
+.slide_three {
+    background: url('./../images/family/family-7.jpg');
+
+}
+
+.slide_four {
+    background: url('./../images/park-project/park-3.jpg');
+
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0;
+    flex: 1;
+    color: #fff;
+    height: 80vh;
+    border-radius: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.slide_active {
+    flex: 6;
+    transition: all 0.3s ease-in;
+    padding: 50px;
+
+}
+
+.slide__title {
+    opacity: 0;
+    max-width: 50px;
+    background: url('./../images/bg-cyrcle.png') no-repeat;
+    background-size: contain;
+
+}
+
+.slide__description-container {
+    font-size: 16px;
+    color: #fff;
+    opacity: 0;
+    max-width: 50px;
+}
+
+.slide_active .slide__title {
+    opacity: 1;
+    max-width: 100%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 32px;
+    margin: 0;
+    font-weight: 700;
+    color: #2c2c2c;
+    transition: opacity 0.4s ease-in 0.5s;
+    transition-delay: 0.5s;
+}
+
+.slide_active .slide__description-container {
+    background-color: #ffffffda;
+    border-radius: 10px;
+    box-shadow: 0 0 2px #ffffff63;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 100%;
+    opacity: 1;
+    padding: 50px;
+    transition: opacity .4s ease-in .5s;
+    overflow: scroll;
+}
+
+.option__title {
+    color: #639;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+@media (max-width: 1325px) {
+    .slide_active .slide__description-container {
+        height: 100%;
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    .slide {
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .container_active .options {
+        padding: 50px 0;
+    }
+    .slide_active .slide__title{
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 968px) {
+    .options__container {
+        display: flex;
+        flex-direction: column;
+    }
+    .slide {
+        max-height: 20vh;
+        min-height: 10vh;
+    }
+    .slide_active{
+        max-height: 80vh;
+    }
+    .slide__description-container {
+      height: 0;
+      overflow: hidden;
+    }
+
+    .slide_active .slide__title{
+        padding: 0;
+    }
+}
+
+@media(max-width:568px){
+    .options{
+        overflow: scroll;
+        height: 100%;
+    }
+    .options__container {padding: 0;
+}
+.slide_active .slide__title{
+    font-size: 20px;
+}}

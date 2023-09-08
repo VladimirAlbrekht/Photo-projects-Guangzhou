@@ -1,0 +1,90 @@
+.about {
+    display: flex;
+    padding: 100px 150px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-size: 30%;
+    transition: all 1s;
+    gap: 20px;
+    position: relative;
+    background: linear-gradient(to bottom, #ffffffbd, #ffffffb0), url('./../images/about-me-image.png') no-repeat;
+    background-position: 50px 50px;
+    height: 100%;
+
+}
+
+
+.about__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    max-width: 928px;
+}
+
+.about__image {
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    object-fit: contain;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.about__title {
+    align-self: center;
+}
+
+.about__content {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+
+
+@media (max-width: 1124px) {
+    .about {
+       padding: 100px 50px;
+       background: linear-gradient(to bottom, #ffffffbd, #ffffff), url('./../images/about-me-image.png') no-repeat;
+       background-size: cover;
+    }
+
+    .about__container {
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        padding: 50px 20px;
+    }
+    .about__container{
+        padding: 0 20px;
+    }
+    .about__content {
+        gap: 20px;
+
+    }
+}
+
+@media (max-width: 568px) {
+    .about {
+        overflow: scroll;
+    }
+}
+
+@media (max-width: 425px) {
+    .about {
+        padding: 100px 20px;
+    }
+    .about__container{
+        padding: 0;
+    }
+    .about__content {
+        gap: 20px;
+
+    }
+}

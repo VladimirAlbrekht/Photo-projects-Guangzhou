@@ -1,0 +1,76 @@
+.promo {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff), url('./../images/newborn/newborn-4.jpg') no-repeat center top;
+    background-size: cover;
+    height: 100vh;
+}
+
+.promo__container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 10;
+    height: 100%;    
+}
+
+.promo__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    width: 100%;
+    padding: 80px 20px;
+    height: 100%;
+}
+
+.promo__title {
+    text-align: center;
+    margin: 150px 0 0;
+    font-size: 90px;
+    color: #433c48;
+    max-width: 800px;
+}
+
+.promo__subtitle {
+    margin: 0;
+    font-size: 36px;
+    color: #AC89B8;
+    margin-bottom: 100px;
+}
+
+
+@media (max-width: 1124px) {
+    .promo__title {
+        font-size: 72px;
+    }
+}
+
+@media (max-width: 768px) {
+    .promo__title {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 568px) {
+    .promo__content{
+        padding: 20px;
+    }
+    .promo__subtitle {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 375px) {
+    .promo__content{
+        padding: 10px;
+    }
+    .promo__subtitle {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+}
