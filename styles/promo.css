@@ -58,6 +58,7 @@
 @media (max-width: 568px) {
     .promo__content{
         padding: 20px;
+        margin-bottom: 20px;
     }
     .promo__subtitle {
         font-size: 24px;

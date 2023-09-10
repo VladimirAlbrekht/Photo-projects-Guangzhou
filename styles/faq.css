@@ -148,10 +148,11 @@
 
 
 @media(max-width: 568px) {
-.faq{
-    overflow: scroll;
-}
     .faq__container {
         padding: 10px;
+    }
+    .faq__question,
+    .faq__answer {
+        font-size: 12px;
     }
 }

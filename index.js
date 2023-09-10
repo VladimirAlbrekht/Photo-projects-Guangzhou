@@ -29,9 +29,6 @@ allDetails.forEach(item => {
 })
 
 
-
-
-
 pastEventList.forEach((item) => {
     let pastEventButton = item.querySelector('.past-event__link')
     pastEventButton.addEventListener('click', function () {
@@ -202,13 +199,14 @@ function updateProjectPopupInfo(item) {
 
 }
 
-let linksNav = document.querySelectorAll('.link')
+let linksNav = document.querySelectorAll('.link');
 
 linksNav.forEach(function (link) {
     link.addEventListener('click', function (event) {
+     /*    event.preventDefault(); */
+
         linksNav.forEach(function (link) {
             link.classList.remove('link_active');
-
         });
 
         event.target.classList.add('link_active');
@@ -219,14 +217,10 @@ linksNav.forEach(function (link) {
             container.classList.remove('container_active');
         }
 
-    });
-    link.addEventListener('click', function (event) {
-        event.preventDefault();
-
-        let targetId = link.getAttribute('href');
+       /*  let targetId = link.getAttribute('href');
         let targetSection = document.querySelector(targetId);
 
-        targetSection.scrollIntoView({ behavior: 'smooth' });
+        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' }); */
     });
 });
 

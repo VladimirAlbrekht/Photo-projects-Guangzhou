@@ -13,6 +13,12 @@
 .popup_openned {
     display: block;
     overflow: hidden;
+    height: 100vh;
+}
+
+.popup_opened .container {
+    max-height: 100vh;
+    overflow: hidden;
 }
 
 .popup__overlay {
@@ -23,8 +29,8 @@
     width: 100vw;
     height: 100vh;
     background: #BE93C5;
-    background: -webkit-linear-gradient(to right, #DCD0E2, #ECE2F0);
-    background: linear-gradient(to right, #DCD0E2, #ECE2F0);
+    background: -webkit-linear-gradient(to right, #dcd0e2e8, #ece2f0e7);
+    background: linear-gradient(to right, #dcd0e2e8, #ece2f0e7);
 }
 
 .popup__container {
@@ -79,7 +85,7 @@
     display: block;
     position: absolute;
     right: 20px;
-    top: 50%;
+    top: 48%;
     width: 60px;
     height: 60px;
     background: url('./../images/arrow.png');
@@ -92,7 +98,7 @@
     display: block;
     position: absolute;
     left: 20px;
-    top: 50%;
+    top: 48%;
     width: 60px;
     height: 60px;
     background: url('./../images/arrow.png');
@@ -118,6 +124,7 @@
     object-fit: cover;
     width: 80%;
     border-radius: 5px;
+    background-color: #dcd0e2;
     box-shadow: rgba(0, 0, 0, 0.368) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 }
 
@@ -180,6 +187,10 @@
     grid-template-rows: minmax(120px, 240px);
     grid-auto-rows: minmax(120px, 240px);
     gap: 10px;
+}
+
+.popup-project__image {
+    background-color: #dcd0e2;
 }
 
 .popup-project__image_1 {
@@ -252,8 +263,8 @@
     .popup__arrow-right,
     .popup__arrow-left {
 
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
 
     }
 
@@ -291,16 +302,22 @@
 }
 
 @media(max-width:568px) {
+    .popup-project__title {
+        font-family: "Roboto Slab", serif;
+        font-size: 18px;
+    }
 
     .popup__image {
         object-fit: cover;
+        width: 100%;
 
     }
 
     .popup-project__container {
-        padding: 20px;
+        padding: 10px;
         max-width: 95%;
         max-height: 100%;
+        font-size: 12px;
     }
 
     .popup-project__image-container {
@@ -321,6 +338,7 @@
     .popup-project__download-container {
         flex-direction: column;
     }
+
 }
 
 @media(max-width:468px) {

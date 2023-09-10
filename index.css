@@ -14,13 +14,12 @@
 * {
     box-sizing: border-box;
     font-family: 'Roboto Slab', serif;
-    font-weight: 400;
-    
+    font-weight: 400; 
 }
 
 body,html {
     margin: 0;
-    height: 100vh;
+    min-height: calc(var(--vh) * 100);
 }
 
 strong {

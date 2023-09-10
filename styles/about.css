@@ -71,15 +71,12 @@
 }
 
 @media (max-width: 568px) {
-    .about {
-        overflow: scroll;
+    .about{
+        padding: 50px 20px;
     }
 }
 
 @media (max-width: 425px) {
-    .about {
-        padding: 100px 20px;
-    }
     .about__container{
         padding: 0;
     }
