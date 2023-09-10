@@ -3,13 +3,12 @@
     background-size: cover;
     background-attachment: fixed;
     margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px
 }
 
 .new-projects__container {
     padding: 10px;
     transition: all 1s;
-
-
 }
 
 .new-projects__title {
@@ -99,10 +98,22 @@
 }
 
 @media (max-width: 568px) {
+    .new-project__image {
+        width: 150px;
+        height: 150px;
+    }
+
     .new-projects{
         overflow: scroll;
     }
     .new-project__content {
         padding: 20px;
-        gap:15px;
-    }}
+        gap:10px;
+        box-shadow:rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    }
+    .new-project__date {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+}

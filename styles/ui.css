@@ -23,6 +23,7 @@
 
 }
 
+
 .title_size_large {
     font-size: 54px;
 }
@@ -39,6 +40,9 @@
     min-height: 100vh;
 }
 
+.navigation{
+    flex-grow: 1;
+}
 .wechat {
     max-width: 80px;
     max-height: 80px;
@@ -69,7 +73,6 @@
     height: 100%;
     text-decoration: none;
     color: #686868;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     transition: all 0.5s;
 }
@@ -154,7 +157,6 @@
     font-weight: 400;
     color: #3e3e3e;
     font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
 
@@ -197,6 +199,10 @@
         padding: 10px;
         width: 260px;
 
+    }
+
+    .phone {
+        font-size: 12px;
     }
 
 

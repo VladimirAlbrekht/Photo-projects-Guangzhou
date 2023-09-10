@@ -203,7 +203,7 @@ let linksNav = document.querySelectorAll('.link');
 
 linksNav.forEach(function (link) {
     link.addEventListener('click', function (event) {
-     /*    event.preventDefault(); */
+        event.preventDefault();
 
         linksNav.forEach(function (link) {
             link.classList.remove('link_active');
@@ -217,10 +217,10 @@ linksNav.forEach(function (link) {
             container.classList.remove('container_active');
         }
 
-       /*  let targetId = link.getAttribute('href');
+        let targetId = link.getAttribute('href');
         let targetSection = document.querySelector(targetId);
 
-        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' }); */
+        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
 });
 

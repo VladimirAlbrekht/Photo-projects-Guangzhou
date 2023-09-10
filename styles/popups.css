@@ -50,7 +50,7 @@
 .popup__close {
     display: block;
     position: absolute;
-    top: 35px;
+    top: 20px;
     right: 20px;
     width: 30px;
     height: 30px;
@@ -69,6 +69,15 @@
 .popup__close:hover {
     box-shadow: none;
     transition: box-shadow 0.3s;
+}
+
+
+.popup__close span {
+    display: block;
+    width: 30px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #ac89b8;
 }
 
 .popup__close span:first-child {
@@ -107,13 +116,6 @@
 
 }
 
-.popup__close span {
-    display: block;
-    width: 30px;
-    height: 5px;
-    border-radius: 5px;
-    background-color: #ac89b8;
-}
 
 
 .popup__image {
@@ -337,6 +339,22 @@
 
     .popup-project__download-container {
         flex-direction: column;
+    }
+
+    .popup__close {
+        width: 20px;
+        height: 20px;
+        padding: 15px;
+
+    }
+
+    
+    .popup__close span {
+        display: block;
+        width: 15px;
+        height: 3px;
+        border-radius: 5px;
+        background-color: #ac89b8;
     }
 
 }

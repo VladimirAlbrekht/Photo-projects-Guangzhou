@@ -22,7 +22,7 @@
 .header__container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 50px;
     padding: 0;
     align-items: center;
@@ -244,8 +244,8 @@
         left: -100%; 
     }
 
-    .header__container{
-        gap: 20px;
+    .header__menu-list{
+        text-align: center;
     }
 
     .header_active {
@@ -264,8 +264,12 @@
         background-color: #ffffffc6;
     }
 
+    .header__container {
+        gap: 40px;
+    }
+
     .header__image-container{
-        margin-top: 100px;
+        margin-top: 50px;
         max-width: 140px;
         max-height: 140px;
         min-height: 140px;
