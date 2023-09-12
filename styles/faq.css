@@ -4,7 +4,6 @@
     background-size: cover;
     background-attachment: fixed;
     height: 100%;
-
 }
 
 .faq__title {
@@ -17,14 +16,13 @@
     align-items: center;
     justify-content: space-around;
     height: 100%;
-    width: fit-content;
     background-color: #ffffffb3;
     padding: 50px;
     border-radius: 20px;
     margin: 0 auto;
     max-width: 972px;
     width: 100%;
-
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 
 .faq__questions-container {
@@ -32,101 +30,54 @@
     flex-direction: column;
     justify-content: flex-start;
     gap: 10px;
-    padding: 5px
+    padding: 5px;
+    width: 100%;
 }
 
 .faq__question-list {
     width: 100%;
-    max-width: 800px;
-    display: block;
+    gap: 5px;
+    min-width: 100%;
     width: 100%;
-    overflow: hidden;
-    color: #fff;
-    transition: all 0.5s;
 }
 
 .faq__info-container {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    display: flex;
     gap: 5px;
-
 }
 
 .faq__question-list[open] .faq__question {
-    background-color: #C5B0CF;
-    transition: all 0.5s;
-    background: linear-gradient(to bottom, #efe2f3ab, #dcd0e2b1), url('./../images/bg-cyrcle.png') no-repeat -20px;
-    background-size: contain;
-    transition: all 0.3s;
-
+    background: linear-gradient(to bottom, #efe2f3, #dcd0e2);
+    font-weight: 600;
 }
 
 .faq__answer {
-    margin: 0;
     padding: 20px;
-    visibility: hidden;
 }
 
 .faq__question-list[open] .faq__answer {
-    transition: all 0.5s;
     height: 100%;
-    visibility: visible;
-    background-color: transparent;
-    color: #383838;
 }
-
 
 .faq__question {
     display: block;
-    background: #626262;
-    color: #353535;
-    font-weight: 400;
-    padding: 5px;
-    font-size: 16px;
     cursor: pointer;
     position: relative;
     padding: 10px 10px 10px 50px;
     border-bottom: 1px solid #e2e8f0;
-    background: linear-gradient(to bottom, #efe2f3ab, #dcd0e28d), url('./../images/bg-cyrcle.png') no-repeat -100px;
-    background-size: contain;
-    opacity: 1;
+    background: linear-gradient(to bottom, #efe2f3ab, #dcd0e28d);
     border-radius: 20px;
-
 }
 
-.faq__question-list[open] .faq__question:hover,
 .faq__question:hover {
     background: linear-gradient(to bottom, #efe2f3, #dcd0e2);
-    transition: all 0.3s;
-}
-
-.faq__question-list[open] .faq__question {
-    background: linear-gradient(to bottom, #efe2f3ab, #dcd0e28d), url('./../images/bg-cyrcle.png') no-repeat 0;
-    background-size: contain;
-    transition: all 0.3s;
-}
-
-.faq__info {
-    color: #605f60;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
 }
 
 @media(max-width: 1124px) {
-
-    .faq__question,
-    .faq__answer {
-        font-size: 14px;
-    }
-
     .faq__info {
         font-size: 14px;
-    }
-
-    .faq__info {
         padding: 10px 20px;
     }
 }
@@ -157,12 +108,6 @@
     }
 
     .faq__container {
-        padding: 10px;
-    }
-
-    .faq__question,
-    .faq__answer {
-        font-size: 12px;
         padding: 10px;
     }
 

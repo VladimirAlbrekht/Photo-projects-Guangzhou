@@ -33,8 +33,6 @@
     height: 50px;
     color: #2c2c2c;
     font-size: 18px;
-    font-style: normal;
-    line-height: normal;
     background: linear-gradient(to bottom, #efe2f3ab, #dcd0e28d), url('./../images/bg-cyrcle.png') no-repeat -280px -05px;
     background-size: contain;
     width: 100%;
@@ -47,17 +45,12 @@
 
 .gallery__link_active {
     background: linear-gradient(to bottom, #efe2f3ab, #dcd0e28d), url('./../images/bg-cyrcle.png') no-repeat 0;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
     background-size: contain;
-    border: 2px solid #efe2f3ab;
     transition: all 0.5s;
-    box-shadow: none;
-
 }
 
 .gallery__link:hover {
     transition: all 0.5s;
-    border: 2px solid #efe2f3ab;
     cursor: pointer;
     box-shadow: rgba(103, 103, 103, 0.25) 0px 0.0625em 0.0625em, rgba(113, 113, 113, 0.25) 0px 0.125em 0.5em, rgba(119, 119, 119, 0.1) 0px 0px 0px 1px inset;
 }
@@ -224,8 +217,5 @@
 
     .gallery__navigation {
         margin-bottom: 5px;
-    
     }
-    
-
 }

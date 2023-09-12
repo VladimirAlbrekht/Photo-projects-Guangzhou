@@ -41,7 +41,13 @@
     color: #fff;
     text-decoration: none;
     color: #323232;
+    font-size: 14px;
+    transition: color 0.5s;
+}
 
+.footer__mail:hover{
+    color: #AA89B8;
+    transition: color 0.5s;
 }
 
 .footer__wechat {
@@ -50,19 +56,19 @@
 
 @media (max-width: 568px) {
     .footer__wechat {
-        display: block;
+        display: flex;
     }
 
-    .footer__container{
+    .footer__container {
         gap: 10px;
     }
 
-    .footer__icons{
+    .footer__icons {
         align-items: center;
         justify-content: center;
     }
 
-    .footer__mail{
+    .footer__mail {
         font-size: 12px;
     }
 

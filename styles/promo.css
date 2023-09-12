@@ -15,7 +15,7 @@
     justify-content: center;
     align-items: flex-end;
     z-index: 10;
-    height: 100%;    
+    height: 100%;
 }
 
 .promo__content {
@@ -58,10 +58,11 @@
 }
 
 @media (max-width: 568px) {
-    .promo__content{
+    .promo__content {
         padding: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 70px;
     }
+
     .promo__subtitle {
         font-size: 24px;
         margin-bottom: 20px;
@@ -69,11 +70,36 @@
 }
 
 @media (max-width: 375px) {
-    .promo__content{
+    .promo__content {
         padding: 10px;
     }
+
     .promo__subtitle {
         font-size: 22px;
         margin-bottom: 50px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 968px) and (orientation: landscape) {
+    .promo {
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .promo__title {
+        font-size: 48px;
+        margin-top: 0;
+    }
+
+
+    .promo__content {
+        padding: 0px;
+        gap: 0px;
+    }
+
+    .promo__subtitle {
+        margin-bottom: 20px;
+        font-size: 24px;
     }
 }

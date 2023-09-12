@@ -38,14 +38,6 @@
     gap: 50px;
 }
 
-.event__description {
-    margin: 0;
-    padding: 0;
-    font-family: "Roboto Slab", serif;
-    font-size: 14px;
-}
-
-
 .past-event {
     display: flex;
     gap: 20px;
@@ -99,6 +91,7 @@
     background-color: #dcd0e2;
     padding: 3px;
     object-fit: cover;
+    box-shadow:rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 
 @media(max-width: 1124px) {
@@ -114,6 +107,7 @@
         width: 140px;
         height: 140px;
         min-width: 140px;
+    
     }
 }
 
@@ -155,4 +149,8 @@
         font-size: 16px;
         padding: 0;
     }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 968px) and (orientation: landscape) {
+    .past-event__description{font-size: 12px;}
 }

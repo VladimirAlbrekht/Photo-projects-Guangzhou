@@ -15,6 +15,8 @@ let currentIndex = 0; // Индекс текущего открытого изо
 const allDetails = document.querySelectorAll('.faq__question-list');
 const templatePastEvent = document.querySelector('#past-event-template').content;
 const pastEventContainer = document.querySelector('.past-events__container');
+let linksNav = document.querySelectorAll('.link');
+const slides = document.querySelectorAll('.slide')
 
 //Слушатели
 menuBurger.addEventListener('click', () => {
@@ -92,7 +94,6 @@ function openPreviousImage() {
     updatePopupImage();
 }
 
-
 // Обработчик нажатия клавиш следующего предыдущего слайда и кнопки esc
 function handleKeyPress(event) {
     if (event.key === 'ArrowRight') {
@@ -136,7 +137,6 @@ tabsList.forEach((tab, index) => {
     })
 })
 
-
 //Функция  автоматического заркытия пункта FAQ при открытии следующего
 function toggleOpenOneOnly() {
     if (this.open) {
@@ -145,7 +145,6 @@ function toggleOpenOneOnly() {
         });
     }
 }
-
 
 // Создаем карточки с прошедшими мероприятиями
 
@@ -199,8 +198,6 @@ function updateProjectPopupInfo(item) {
 
 }
 
-let linksNav = document.querySelectorAll('.link');
-
 linksNav.forEach(function (link) {
     link.addEventListener('click', function (event) {
         event.preventDefault();
@@ -210,8 +207,7 @@ linksNav.forEach(function (link) {
         });
 
         event.target.classList.add('link_active');
-
-        if (window.innerWidth < 568) {
+        if ((window.innerWidth < 568 || screen.la) || (window.innerWidth >= 320 && window.innerWidth <= 968 && window.innerHeight < window.innerWidth)) {
             headerBlock.classList.remove('header_active');
             menuBurger.classList.remove('header__burger_active');
             container.classList.remove('container_active');
@@ -224,17 +220,13 @@ linksNav.forEach(function (link) {
     });
 });
 
-const slides = document.querySelectorAll('.slide')
-
 for (const slide of slides) {
-
     slide.addEventListener('click', () => {
-        removeClass()
+        removeSlideClass()
         slide.classList.add('slide_active')
     })
-
 }
-function removeClass() {
+function removeSlideClass() {
     slides.forEach((slide) => {
         slide.classList.remove('slide_active')
     })

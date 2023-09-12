@@ -11,6 +11,11 @@
     transition: width 0.3s;
 }
 
+.section {
+    padding: 50px;
+    min-height: 100vh;
+}
+
 .title {
     color: #3e3e3e;
     font-weight: 600;
@@ -20,9 +25,7 @@
     margin: 0;
     margin-bottom: 40px;
     position: relative;
-
 }
-
 
 .title_size_large {
     font-size: 54px;
@@ -35,14 +38,10 @@
     line-height: normal;
 }
 
-.section {
-    padding: 50px;
-    min-height: 100vh;
-}
-
-.navigation{
+.navigation {
     flex-grow: 1;
 }
+
 .wechat {
     max-width: 80px;
     max-height: 80px;
@@ -53,7 +52,17 @@
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    transition: box-shadow 0.5s;
+}
 
+.wechat:hover {
+    box-shadow: rgba(103, 103, 103, 0.25) 0px 0.0625em 0.0625em, rgba(113, 113, 113, 0.25) 0px 0.125em 0.5em, rgba(119, 119, 119, 0.1) 0px 0px 0px 1px inset;
+    transition: box-shadow 0.5s;
+}
+
+.wechat-id {
+    padding: 0;
+    font-size: 14px;
 }
 
 .wechat-image {
@@ -74,12 +83,12 @@
     text-decoration: none;
     color: #686868;
     font-weight: 600;
-    transition: all 0.5s;
+    transition: color 0.5s;
 }
 
 .link:hover {
     color: #AA89B8;
-    transition: all 0.5s;
+    transition: color 0.5s;
 }
 
 .link_active {
@@ -117,7 +126,6 @@
     text-transform: capitalize;
     justify-content: center;
     align-items: center;
-    align-self: flex-end;
     width: 120px;
     height: 40px;
     transition: all 0.5s;
@@ -148,16 +156,22 @@
     padding: 0;
     margin: 0;
     font-size: 14px;
+    color: #383838;
 }
 
 .phone {
     display: flex;
     align-self: center;
     text-decoration: none;
-    font-weight: 400;
     color: #3e3e3e;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 600;
+    transition: color 0.5s;
+}
+
+.phone:hover {
+    color: #AA89B8;
+    transition: color 0.5s;
 }
 
 @media (max-width: 1024px) {
@@ -189,25 +203,24 @@
 @media (max-width: 568px) {
     .section {
         padding: 50px 10px;
-        max-height: 100vh;
-        overflow: scroll;
-
     }
 
     .button {
         font-size: 14px;
         padding: 10px;
         width: 260px;
-
     }
 
     .phone {
         font-size: 12px;
     }
 
-
     .description {
 
+        font-size: 12px;
+    }
+
+    .wechat-id {
         font-size: 12px;
     }
 
@@ -228,5 +241,15 @@
 @media (max-width: 425px) {
     .title {
         font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 968px) and (orientation: landscape) {
+    .title {
+        font-size: 24px;
+    }
+
+    .description {
+        font-size: 12px;
     }
 }

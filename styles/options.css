@@ -52,6 +52,7 @@
     background-repeat: no-repeat;
     transition: all 0.5s ease-in-out;
     overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 
 .slide_active {
@@ -97,6 +98,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    height: 100%;
     max-width: 100%;
     opacity: 1;
     padding: 50px;
@@ -166,8 +168,12 @@
         height: fit-content;
         overflow: visible;
     }
-    .slide{
+
+    .slide {
         padding: 10px;
+    }
+    .slide_active {
+        max-height: 70vh;
     }
 
     .options__container {
