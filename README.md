@@ -2,7 +2,7 @@
 
 Проект под заказ: Веб-сайт для фотографа в Гуанчжоу.
 
-[Посмотреть можно здесь](https://albrecht-photo.com)
+[Посмотреть можно здесь](https://albrecht-photo.com).
 
 ## Техническое задание: 
 
@@ -50,5 +50,5 @@
 |![Скриншот проверки сайта на доступность](./images/screen-accessibility.png)|![Скриншот проверки валиадности html](./images/screen-html-validation.png)|![Скриншот проверки валидности css](./images/screen-css-validation.png)|
 
 ## Результаты скорости загрузки и оптимизации сайта:
-![Скриншот проверки скорости загрузки мобильной версии сайта](./images/screen-mobile-optimization.png)
-![Скриншот проверки скорости загрузки десктоп версии сайта](./images/screen-desktop-optimization.png)
+![Скриншот проверки скорости загрузки мобильной версии сайта](./images/screen-mobile-speed.png)
+![Скриншот проверки скорости загрузки десктоп версии сайта](./images/screen-desktop-speed.png)
